@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CCS - Hojas de estilo en Cascada documento</title>
+    <style>
+        /* selectores tipo etiqueta */
+        body{
+            font-family: consolas;
+        }
+        p{
+            line-height: 25px;
+        }
+        /* Selectores tipo id */
+        /* importante: en HTML se recomienda utilizar sólo un ID a la vez, sin repetir */
+        #subtitulo{
+            color:darkmagenta;
+        }
+        #mainTitle{
+            /* color: rgb(190,0,170);   */
+            color: #99cc
+        }
+        /* Selectores tipo clase */
+        .articulo{
+            font-family: monospace;
+        }
+        .articulo>header{
+            font-weight: bold;
+            font-size: 2em;             
+        }
+    </style>
+</head>
+<body>
+    <h1 id="mainTitle">CCS - Hojas de estilo en Cascada documento</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sed, placeat esse itaque eveniet, atque similique odio tenetur eum vero eius. Quis eaque, amet hic veritatis ab similique numquam, provident.</p>
+    <h2 id="subtitulo">Ejemplo de ID</h2>
+    <section id="articulos">
+        <article class="articulo">
+            <header class="titulo">Título del articulo 1</header>
+            <p class="contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate fugit, reprehenderit rerum sequi. Voluptas animi, quia praesentium voluptatum exercitationem repellendus quo, quaerat modi esse perspiciatis omnis ut laudantium, placeat molestiae.</p>
+            <button class="readmore">Leer más</button>
+        </article> 
+        <article class="articulo">
+            <header class="titulo">Título del articulo 2</header>
+            <p class="contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate fugit, reprehenderit rerum sequi. Voluptas animi, quia praesentium voluptatum exercitationem repellendus quo, quaerat modi esse perspiciatis omnis ut laudantium, placeat molestiae.</p>
+            <button class="readmore">Leer más</button>
+        </article>
+        <article class="articulo">
+            <header>Título del articulo 3</header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate fugit, reprehenderit rerum sequi. Voluptas animi, quia praesentium voluptatum exercitationem repellendus quo, quaerat modi esse perspiciatis omnis ut laudantium, placeat molestiae.</p>
+            <button>Leer más</button>
+        </article> 
+    </section>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de sesion</title>
+    <script> 
+        function sesion() {
+            var formulario = document.getElementById('loginform');
+            var usuario = formulario.user.value;
+            var password = formulario.passwd.value;
+            var recordar = formulario.remember.value;
+            
+            /*var usuario = document.getElementById('user').value;
+            var password = document.getElementById('passwd').value;
+            var recordar = document.getElementById('remember').value;*/
+            
+            //imprimir valores de controles
+            document.getElementById('resultado').innerHTML='Usuario: '+usuario+ ' Contraseña: '+password+' Recordar: '+recordar;
+         }   
+    </script>
+</head>
+<body>
+  <h1 style="text-align:center">Inicio de sesión</h1>
+   <!-- div#loginform>div>(label[for=use]{Usuario:}+input:text[name=user id=user])^div>(label[for=password]{Contraseña:}+input:password[name=passwd] id="passwd")^div>(label[for=remember]>input:checkbox[name=remember id=remember]{Recordar contraseña})^div>a[href=#]{¿Olvidaste tu contraseña?}^div>button{Registrar}+button{Iniciar sesion}-->
+   <form id="loginform" action="#" method="get" style="text-align:center">
+       <div>
+            <label for="use">Usuario:</label>
+            <input type="text" name="user" id="user">
+        </div>
+       <div>
+           <label for="password">Contraseña:
+           </label>
+           <input type="password" name="passwd" id="passwd">
+        </div>
+       <div>
+           <label for="remember">
+           <input type="checkbox" name="remember" id="remember">Recordar contraseña
+           </label>
+        </div>
+       <div>
+           <a href="#">¿Olvidaste tu contraseña?</a>
+       </div>
+       <div>
+           <button>Registrar</button>
+           <button id="btnSesion">Iniciar sesion</button>
+        </div>
+   </form>
+   <div id="resultado"></div>
+   <script>
+       document.getElementById("btnSesion").addEventListener('click',function(evento){
+            evento.preventDefault();
+            sesion();
+        });
+    </script>
+</body>
+</html>

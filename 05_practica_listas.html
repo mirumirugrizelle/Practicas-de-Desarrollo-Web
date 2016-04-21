@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listas en HTML</title>
+</head>
+<body>
+    <h1>Listas en HTML</h1>
+    <h2>Listas desordenadas</h2>
+    <hr>
+    <ul>
+       <!-- li{Elemnto de lista $}*5 -->
+        <li>Elemento de lista 1</li>
+        <li>Elemento de lista 2</li>
+        <li>
+            Elemento de lista 3
+            <ul>
+                <li>
+                    Elemento de lista 3.1
+                    <ul>
+                        <li>Elemento de lista 3.1.1</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Elemento de lista 4</li>
+        <li>Elemento de lista 5</li>
+    </ul>
+    <h2>Listas ordenas</h2>
+    <hr>
+    <!-- ol>li{Elemnto de lista $}*5 -->
+    <ol>
+        <ol>
+            <li>Elemento de lista 1</li>
+            <li>Elemento de lista 2</li>
+            <li>Elemento de lista 3</li>
+               <!-- ol>li{Elemento de lista 3.1}>ol>li{}Elemento de lista 3.1.1} -->
+                <ol>
+                    <li>Elemento de lista 3.1
+                        <ol>
+                            <li>Elemento de lista 3.1.1</li>
+                        </ol>
+                    </li>
+                </ol>
+            <li>Elemento de lista 4</li>
+            <li>Elemento de lista 5</li>
+        </ol>
+    </ol>
+</body>
+</html>
