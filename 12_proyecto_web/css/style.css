@@ -101,3 +101,11 @@
     background-color: rgba(255, 0, 147, 0.96);
     clear: both;
 }
+#lupita {
+    display: flex;
+}
+
+#busqueda {
+    display: inline-block;
+    float: left;
+}
