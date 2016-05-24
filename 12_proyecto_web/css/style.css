@@ -4,6 +4,13 @@
     padding: 10px;
     margin: 10px;
 }*/
+
+/* reset css */
+h1,h2,h3,h4,h5,h6,figure,p {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     width: 920px;
     margin: 0 auto;
@@ -108,13 +115,69 @@
   
 /* NOTA IMPORTANTE FIN */
 
+/* NOTA SECUNDARIA INICIO */
 #notas-secundarias {
-    height: 300px;
+    min-height: 300px;
     width: 700px;
-    background-color: rgba(154, 14, 154, 0.69);
     display: inline-block;
     float: left;
 }
+
+#notas-secundarias article {
+    display: flex;
+}
+
+.sombra-img {
+    box-shadow: 0px 0px 5px #bdbdbd;
+}
+.img-nota-secundaria {
+    position: relative;
+}
+
+.img-nota-secundaria span {
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    padding: 5px 10px;
+    background-color: lightgray;
+}
+
+.titulo-nota-secundaria {
+    font-size: 1.7em;
+    line-height: 0.9em;
+    font-variant: small-caps;
+}
+
+.cuerpo-nota-secundaria {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.intro-nota-secundaria {
+    text-align: justify;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.boton {
+    background: #AA3521;
+    display: inline-block;
+    padding: 3px;
+    box-shadow: 0px 1px 3px darkgray;
+}
+
+.boton>div {
+    padding: 1px 20px;
+    border: 1px solid rgba(255,255,255,.7)
+}
+
+.boton p {
+    color: white;
+    font-variant: small-caps;
+    font-size: 1.1em;
+}
+
+/* NOTA SECUNDARIA FIN */
 
 #publicidad {
     height: 300px;
@@ -129,4 +192,3 @@
     background-color: rgba(255, 0, 147, 0.96);
     clear: both;
 }
-
