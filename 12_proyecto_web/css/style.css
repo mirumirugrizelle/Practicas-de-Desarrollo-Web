@@ -125,6 +125,11 @@ h1,h2,h3,h4,h5,h6,figure,p {
 
 #notas-secundarias article {
     display: flex;
+    background-image: url('../images/separador-notas-secundarias.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .sombra-img {
@@ -156,7 +161,6 @@ h1,h2,h3,h4,h5,h6,figure,p {
 .intro-nota-secundaria {
     text-align: justify;
     margin: 10px 0;
-    font-size: 1.1em;
 }
 
 .boton {
